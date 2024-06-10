@@ -1,0 +1,19 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    margin-left: 20px;
+    margin-right: 20px;
+}
