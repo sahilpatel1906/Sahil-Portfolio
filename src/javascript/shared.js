@@ -33,7 +33,7 @@ const timeline = [
     },
     {
         "year": "2018-2022",
-        "info": "Started University",
+        "info": "University of Bristol: Masters in Mechanical and Electrical Engineering",
         "side": "right"
     },
     {
@@ -66,7 +66,7 @@ function createProjectsList(projectsList, elemId) {
 function createTimeline(timelineItems, elemId) {
     for (let item of timelineItems) {
         $(elemId).append(`          
-             <article class="container ${item.side}">
+             <div class="container">
                 <div class="content">
                     <h4>${item.year}</h4>
                     <p>${item.info}</p>

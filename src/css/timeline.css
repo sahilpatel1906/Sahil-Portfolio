@@ -1,0 +1,75 @@
+#timeline-div {
+    margin: 5em auto;
+    max-width: 34.15em;
+}
+
+.content {
+    border: solid 1px;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    max-width: 34em;
+}
+
+.container:nth-child(odd) {
+    transform: translateX(17em);
+    border-left: 3px solid black;
+    padding-left: 3em;
+}
+
+.container:nth-child(even) {
+    transform: translateX(-17em);
+    border-right: 3px solid black;
+    padding-right: 3em;
+}
+
+.container::before{
+    content: '';
+    background: black;
+    width: 3em;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container:nth-child(odd)::before {
+    left: 0;
+}
+
+.container:nth-child(even)::before {
+    right: 0;
+}
+
+.container:nth-child(odd) div::before {
+    content: '';
+    background: white;
+    box-shadow: 0 0 0.5em blue;
+    height: 0.8em;
+    width: 0.8em;
+    border-radius: 50%;
+    border-color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container:nth-child(odd) div::before {
+    left: -0.5em
+}
+
+.container:nth-child(even) div::before {
+    content: '';
+    background: white;
+    box-shadow: 0 0 0.5em blue;
+    height: 0.8em;
+    width: 0.8em;
+    border-radius: 50%;
+    border-color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container:nth-child(even) div::before {
+    right: -0.5em
+}
