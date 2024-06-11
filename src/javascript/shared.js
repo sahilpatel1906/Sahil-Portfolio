@@ -28,19 +28,33 @@ const TopProjects = [
 const timeline = [
     {
         "year": "2000",
-        "info": "Birth",
-        "side": "left"
+        "info": "Birth"
     },
     {
         "year": "2018-2022",
-        "info": "University of Bristol: Masters in Mechanical and Electrical Engineering",
-        "side": "right"
+        "info": "University of Bristol: Masters in Mechanical and Electrical Engineering"
     },
     {
         "year": "2022-2023",
-        "info": "F1 Website Data Graphing & Analysis",
-        "side": "left"
+        "info": "F1 Website Data Graphing & Analysis"
+    },
+    {
+        "year": "2023",
+        "info": "Data Science Internship at REPLY"
+    },
+    {
+        "year": "2023",
+        "info": "AWS Cloud Practitioner Foundational"
+    },
+    {
+        "year": "2024",
+        "info": "Completed full Stack Bootcamp by Bright Network Technology Academy"
+    },
+    {
+        "year": "Now",
+        "info": "Full stack development at CookSys"
     }
+
     
 ]
 

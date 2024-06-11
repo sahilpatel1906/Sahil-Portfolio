@@ -64,3 +64,15 @@
     padding: 10em;
     text-align: center;
 }
+
+#github-bio{
+    font-size: 3em;
+}
+
+h2 {
+    margin-top: 1em;
+    padding: 2em;
+    padding-bottom: 0em;
+    font-size: 2.5em;
+    text-align: center;
+}

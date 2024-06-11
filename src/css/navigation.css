@@ -1,6 +1,7 @@
 nav {
     display: flex;
     justify-content: space-between;
+    padding-top: 1.5em;
 }
 
 #nav-list {
@@ -14,6 +15,17 @@ nav {
 }
 
 a {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-decoration: none;
+    font-size: 23px;
 }
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: gray;
+}
+
