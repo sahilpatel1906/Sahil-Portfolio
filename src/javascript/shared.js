@@ -120,11 +120,6 @@ createAllProjectsList(TopProjects, '#all-projects')
 // Generate timeline components
 createTimeline(timeline, '#timeline-div')
 
-// $(".carousel-a-tag").click(function (event) {
-//     event.preventDefault();
-//     window.location.href = `http://127.0.0.1:5500/src/index.html#project-${event.target.value}`
-// })
-
 $(".carousel-a-tag").click(function(event) {
     event.preventDefault();
     const projectId = event.target.getAttribute("value");

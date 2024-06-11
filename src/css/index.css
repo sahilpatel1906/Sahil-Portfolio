@@ -5,8 +5,8 @@
 
 }
 
-body span {
-    position: absolute;
+#wrapper span {
+    position: fixed;
     background-color: transparent;
     width: 60px;
     height: 60px;
