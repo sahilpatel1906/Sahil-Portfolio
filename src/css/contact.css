@@ -5,6 +5,38 @@
 
 }
 
-footer {
-    position: absolute;
+h1 {
+    text-align: center;
+    margin-top: 2em;
+}
+
+#contact-section{
+    display: flex;
+    justify-content: center;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5em;
+    margin-bottom: 4em;
+    padding: 1em;
+    border: 1px solid black;
+    width: 50vw;
+}
+
+#message-input{
+    height: 5em;
+}
+
+#contact-form input{
+    width: 80%;
+    margin: 1em;
+    padding: 1em;
+}
+
+#contact-form label{
+    display: none;
 }

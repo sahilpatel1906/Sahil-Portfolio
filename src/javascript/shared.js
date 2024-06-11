@@ -78,6 +78,23 @@ function createProjectsList(projectsList, elemId) {
     }
 }
 
+// function to create a list of projects based on provided json and elementId
+function createAllProjectsList(projectsList, elemId) {
+    for (let idx = 0; idx < projectsList.length; idx++) {
+        let project = projectsList[idx]
+        $(elemId).append(`
+            <article class="single-project" id="project-${idx}">
+                <h4>${project.name}</h4>
+                <a href="${project.github}"><img src="" alt="Github Link to project ${project.github}"></a>
+                <div>
+                    <p>${project.brief}</p>
+                    <p>Technologies:${project.technologies} </p>
+                </div>
+            </article>
+        `);
+    }
+}
+
 
 // function to create a timeline components
 function createTimeline(timelineItems, elemId) {
