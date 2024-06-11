@@ -1,0 +1,37 @@
+footer {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    padding-bottom: 0em;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+#contact-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-information p{
+    padding: 0.5em;
+    margin: 0;
+}
+#contact-information div{
+    padding: 0.5em;
+    margin: 0;
+}
+
+#copyright-logo-div {
+    text-align: end;
+}
+
+#copyright-logo-div img {
+    width: 100px;
+    height: 100px;
+}

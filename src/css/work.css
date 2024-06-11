@@ -1,0 +1,16 @@
+*{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#all-projects {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+footer {
+    position: absolute;
+}
