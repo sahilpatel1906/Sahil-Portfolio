@@ -65,7 +65,7 @@ function createProjectsList(projectsList, elemId) {
         $(elemId).append(`
             <article class="single-project" id="project-${idx}">
                 <h4>${project.name}</h4>
-                <a href="${project.github}"><img src="" alt="Github Link to project ${project.github}"></a>
+                <a href="${project.github}"><img src="./../img/github-mark.png" alt="Github Link to project ${project.github}"></a>
                 <div>
                     <p>${project.brief}</p>
                     <p>Technologies:${project.technologies} </p>
@@ -84,8 +84,10 @@ function createAllProjectsList(projectsList, elemId) {
         let project = projectsList[idx]
         $(elemId).append(`
             <article class="single-project" id="project-${idx}">
-                <h4>${project.name}</h4>
-                <a href="${project.github}"><img src="" alt="Github Link to project ${project.github}"></a>
+                <div class="project-heading">
+                    <h4>${project.name}</h4>
+                    <a href="${project.github}"><img src="./../img/github-mark.png" alt="Github Link to project ${project.github}"></a>
+                </div>
                 <div>
                     <p>${project.brief}</p>
                     <p>Technologies:${project.technologies} </p>
@@ -113,6 +115,8 @@ function createTimeline(timelineItems, elemId) {
 // Generate top projects list
 createProjectsList(TopProjects, '#recent-projects')
 
+// Generate top projects list
+createAllProjectsList(TopProjects, '#all-projects')
 
 // Generate timeline components
 createTimeline(timeline, '#timeline-div')

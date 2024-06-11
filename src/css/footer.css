@@ -11,6 +11,15 @@ footer {
     margin-top: auto;
 }
 
+footer a {
+ padding: 5px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
 #contact-information{
     display: flex;
     flex-direction: column;

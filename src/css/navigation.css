@@ -14,7 +14,7 @@ nav {
     display: inline;
 }
 
-a {
+nav a {
     margin-left: 2em;
     margin-right: 2em;
     text-decoration: none;
