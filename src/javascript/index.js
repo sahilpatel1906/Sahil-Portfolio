@@ -21,12 +21,8 @@ function createBoxesDiv(x = 10) {
     }
 }
 
-    createBoxesDiv(10);
+createBoxesDiv(10);
 
-// $(document).on( "scroll", function test(){
-//     console.log("hi");
-//     createBoxesDiv(15);
-// });
 
 
 // Download pdf on button click on index

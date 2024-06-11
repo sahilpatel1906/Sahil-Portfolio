@@ -53,9 +53,7 @@ const timeline = [
     {
         "year": "Now",
         "info": "Full stack development at CookSys"
-    }
-
-    
+    } 
 ]
 
 // function to create a list of projects based on provided json and elementId
@@ -73,10 +71,11 @@ function createProjectsList(projectsList, elemId) {
             </article>
         `);
         $(".carousel-nav").append(
-            `<a href="#project-${idx}"></a>`
+            `<a class="carousel-a-tag" href="#" value="${idx}"></a>`
         );
     }
 }
+
 
 // function to create a list of projects based on provided json and elementId
 function createAllProjectsList(projectsList, elemId) {
@@ -121,4 +120,16 @@ createAllProjectsList(TopProjects, '#all-projects')
 // Generate timeline components
 createTimeline(timeline, '#timeline-div')
 
+// $(".carousel-a-tag").click(function (event) {
+//     event.preventDefault();
+//     window.location.href = `http://127.0.0.1:5500/src/index.html#project-${event.target.value}`
+// })
 
+$(".carousel-a-tag").click(function(event) {
+    event.preventDefault();
+    const projectId = event.target.getAttribute("value");
+    const carousel =  $("#recent-projects");
+    const left = $(`#project-${projectId}`).offset().left;
+    carousel.scrollLeft(left);
+}
+)
