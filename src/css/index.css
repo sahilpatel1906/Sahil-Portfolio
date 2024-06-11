@@ -4,16 +4,16 @@
     font-style: normal;
 }
 
-#wrapper {
+body{
     overflow-x: hidden;
 }
 
 #wrapper span {
     position: absolute;
     background-color: transparent;
-    width: 60px;
-    height: 60px;
-    border: 6px solid blue;
+    width: 40px;
+    height: 40px;
+    border: 4px solid blue;
 }
 
 @keyframes animate{
