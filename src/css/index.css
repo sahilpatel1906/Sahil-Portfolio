@@ -5,6 +5,25 @@
 
 }
 
+body span {
+    position: absolute;
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    border: 6px solid blue;
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(1.8) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
 #recent-projects{
     display: flex;
     overflow-x: auto;

@@ -7,6 +7,28 @@ async function getBio() {
 
 getBio();
 
+function getRandomLocation() {
+    return Math.floor(Math.random()*100)
+}
+function getRandomDuration() {
+    return Math.floor(Math.random()*15 +1)
+}
+function createBoxesDiv(x = 10) {
+    for (let idx = 0; idx < x; idx++) {
+        $("body").append(`
+                <span style="z-index: -1; top:${getRandomLocation()}%; left:${getRandomLocation()}%; animation: animate ${getRandomDuration()}s linear infinite"></span>
+        `);
+    }
+}
+
+    createBoxesDiv(10);
+
+// $(document).on( "scroll", function test(){
+//     console.log("hi");
+//     createBoxesDiv(15);
+// });
+
+
 // Download pdf on button click on index
 $('#resume-download').click(function(){
     window.open("./../misc/FastTrack Blank Blankski March 2024.pdf", '_blank');
