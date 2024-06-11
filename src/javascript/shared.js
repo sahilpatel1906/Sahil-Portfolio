@@ -102,7 +102,7 @@ function createTimeline(timelineItems, elemId) {
     for (let item of timelineItems) {
         $(elemId).append(`          
              <article class="container">
-                <div class="content">
+                <div>
                     <h4>${item.year}</h4>
                     <p>${item.info}</p>
                 </div>

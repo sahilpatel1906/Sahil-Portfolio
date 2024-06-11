@@ -3,17 +3,23 @@
     max-width: 34.15em;
 }
 
-.content {
-    border: solid 1px;
-    border-radius: 0.5em;
-    padding: 0.5em;
+.container {
     max-width: 34em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+}
+
+.container div{
+    border: 2px solid;
+    border-radius: 1em;
+    padding: 1.5em;
 }
 
 .container:nth-child(odd) {
-    transform: translateX(17em);
     border-left: 3px solid black;
     padding-left: 3em;
+    transform: translateX(17em);
 }
 
 .container:nth-child(even) {
@@ -32,6 +38,7 @@
     transform: translateY(-50%);
 }
 
+
 .container:nth-child(odd)::before {
     left: 0;
 }
@@ -40,7 +47,7 @@
     right: 0;
 }
 
-.container:nth-child(odd) div::before {
+.container:nth-child(odd) div::before, .container:nth-child(even) div::before {
     content: '';
     background: white;
     box-shadow: 0 0 0.5em blue;
@@ -57,19 +64,36 @@
     left: -0.5em
 }
 
-.container:nth-child(even) div::before {
-    content: '';
-    background: white;
-    box-shadow: 0 0 0.5em blue;
-    height: 0.8em;
-    width: 0.8em;
-    border-radius: 50%;
-    border-color: black;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
 .container:nth-child(even) div::before {
     right: -0.5em
+}
+
+
+@media screen and (max-width: 1150px) {
+    #timeline-div {
+        width: 80vw;
+    }
+
+    #timeline-div .container {
+        width: 100%;
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+    }
+
+    #timeline-div .container::before {
+        width: 3px;
+        height: 4em;
+        top: -2em;
+        left: 50%;
+        transform: translateX(-50%);
+    } 
+
+    #timeline-div .container div::before {
+        top: -0.5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
