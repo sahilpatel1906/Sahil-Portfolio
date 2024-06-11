@@ -46,18 +46,21 @@ const timeline = [
 
 // function to create a list of projects based on provided json and elementId
 function createProjectsList(projectsList, elemId) {
-    for (let project of projectsList) {
+    for (let idx = 0; idx < projectsList.length; idx++) {
+        let project = projectsList[idx]
         $(elemId).append(`
-             <article>
+            <article class="single-project" id="project-${idx}">
                 <h4>${project.name}</h4>
-                <a href="${project.github}" /><img src="" alt="Github Link to project ${project.github}"></a>
+                <a href="${project.github}"><img src="" alt="Github Link to project ${project.github}"></a>
                 <div>
                     <p>${project.brief}</p>
                     <p>Technologies:${project.technologies} </p>
-
                 </div>
             </article>
         `);
+        $(".carousel-nav").append(
+            `<a href="#project-${idx}"></a>`
+        );
     }
 }
 
@@ -66,7 +69,7 @@ function createProjectsList(projectsList, elemId) {
 function createTimeline(timelineItems, elemId) {
     for (let item of timelineItems) {
         $(elemId).append(`          
-             <div class="container">
+             <article class="container">
                 <div class="content">
                     <h4>${item.year}</h4>
                     <p>${item.info}</p>

@@ -1,4 +1,66 @@
-/* * {
-    margin: 0;
-    padding: 0;
-} */
+*{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#recent-projects{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    border: 1px solid;
+}
+
+#recent-projects::-webkit-scrollbar{
+    width: 0px;
+}
+
+#recent-projects-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.single-project{
+   flex-grow: 1;
+   flex-shrink: 0;
+   flex-basis: 100%;
+   scroll-snap-align: start;
+}
+
+.carousel-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.carousel-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #000;
+    opacity: 0.5;
+    transition: opacity ease 250ms;
+}
+
+.carousel-nav a:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+#bio {
+    padding: 10em;
+    text-align: center;
+}
