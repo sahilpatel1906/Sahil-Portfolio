@@ -4,8 +4,6 @@ async function getBio() {
     .then(response => response.json())
     .then(data => 
         {
-            $('#github-profile-pic').attr("src",data.avatar_url);
-            $('#github-profile-pic-a').attr("href",data.avatar_url);
             $('#github-bio').html(`${data.bio}`);
         })
 };

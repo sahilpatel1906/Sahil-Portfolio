@@ -97,7 +97,7 @@ function createProjectsList(projectsList, elemId) {
             <article class="single-project" id="project-${idx}">
                 <div class="project-heading">
                     <h4><span class="span-bold">${project.name}</span></h4>
-                    <a href="${project.github}"><img src="./../img/github-mark.png" alt="Github Link to project ${project.github}"></a>
+                    <a href="${project.github}"><img src="./img/github-mark.png" alt="Github Link to project ${project.github}"></a>
                 </div>
                 <div>
                     <p><span class="span-bold">Brief: </span>${project.brief}</p>
@@ -111,6 +111,18 @@ function createProjectsList(projectsList, elemId) {
     }
 }
 
+// Create bio for index page
+async function getProfilePic() {
+    await fetch("https://api.github.com/users/sahilpatel1906")
+    .then(response => response.json())
+    .then(data => 
+        {
+            $('#github-profile-pic').attr("src",data.avatar_url);
+            $('#github-profile-pic-a').attr("href",data.avatar_url);
+        })
+};
+
+getProfilePic();
 
 // function to create a list of projects based on provided json and elementId
 function createAllProjectsList(projectsList, elemId) {
@@ -120,7 +132,7 @@ function createAllProjectsList(projectsList, elemId) {
             <article class="single-project" id="project-${idx}">
                 <div class="project-heading">
                     <h4><span class="span-bold">${project.name}</span></h4>
-                    <a href="${project.github}"><img src="./../img/github-mark.png" alt="Github Link to project ${project.github}"></a>
+                    <a href="${project.github}"><img src="./img/github-mark.png" alt="Github Link to project ${project.github}"></a>
                 </div>
                 <div>
                     <p><span class="span-bold">Brief: </span>${project.brief}</p>
