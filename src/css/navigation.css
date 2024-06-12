@@ -1,14 +1,31 @@
 nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 1.5em;
+    padding-top: 1em;
     padding-bottom: 1.5em;
 }
 
+nav div{
+    display: flex;
+    align-items: center;
+}
+
+nav div a{
+    margin-left: 1em;
+    margin-right: 2em;
+    text-decoration: none;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+
 #nav-list {
+    display: flex;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+    align-items: center;
+
 }
 
 .nav-list-elem {

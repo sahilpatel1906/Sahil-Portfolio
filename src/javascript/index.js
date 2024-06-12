@@ -2,7 +2,12 @@
 async function getBio() {
     await fetch("https://api.github.com/users/sahilpatel1906")
     .then(response => response.json())
-    .then(data => $('#github-bio').html(`${data.bio}`))
+    .then(data => 
+        {
+            $('#github-profile-pic').attr("src",data.avatar_url);
+            $('#github-profile-pic-a').attr("href",data.avatar_url);
+            $('#github-bio').html(`${data.bio}`);
+        })
 };
 
 getBio();
@@ -34,4 +39,3 @@ $('#resume-download').click(function(){
 $('#projects-button').click(function(){
     window.open("./work.html", '_self');
 });
-

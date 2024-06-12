@@ -132,6 +132,13 @@ body{
     font-weight: lighter;
 }
 
+#github-profile-pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-left: 2em;
+}
+
 h2 {
     margin: 0em;
     margin-bottom: 20px;
