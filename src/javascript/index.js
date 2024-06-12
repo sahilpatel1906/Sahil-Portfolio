@@ -15,7 +15,7 @@ function getRandomDuration() {
 }
 function createBoxesDiv(x = 10) {
     for (let idx = 0; idx < x; idx++) {
-        $("#wrapper").append(`
+        $("#animation-wrapper").append(`
                 <span style="z-index: -1; top:${getRandomLocation()}%; left:${getRandomLocation()}%; animation: animate ${getRandomDuration()}s linear infinite"></span>
         `);
     }
