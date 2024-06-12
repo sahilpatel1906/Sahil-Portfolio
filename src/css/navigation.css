@@ -14,7 +14,7 @@ nav div a{
     margin-left: 1em;
     margin-right: 2em;
     text-decoration: none;
-    font-size: 23px;
+    font-size: 1.5em;
     text-transform: uppercase;
 }
 
@@ -36,7 +36,7 @@ nav a {
     margin-left: 2em;
     margin-right: 2em;
     text-decoration: none;
-    font-size: 23px;
+    font-size: 1.5em;
     text-transform: uppercase;
 }
 
@@ -48,3 +48,15 @@ nav a:hover {
     color: #A8A8FF;
 }
 
+@media screen and (max-width: 600px) {
+    nav a {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    nav div a{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+}
