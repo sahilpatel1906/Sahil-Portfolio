@@ -5,6 +5,10 @@
 
 }
 
+body {
+    font-size: calc(12px + 0.1vw);
+}
+
 h1 {
     text-align: center;
     margin-top: 2em;
