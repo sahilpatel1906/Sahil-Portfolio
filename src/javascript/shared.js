@@ -95,8 +95,10 @@ function createProjectsList(projectsList, elemId) {
         let project = projectsList[idx]
         $(elemId).append(`
             <article class="single-project" id="project-${idx}">
-                <h4><span class="span-bold">${project.name}</span></h4>
-                <a href="${project.github}"><img src="./../img/github-mark.png" alt="Github Link to project ${project.github}"></a>
+                <div class="project-heading">
+                    <h4><span class="span-bold">${project.name}</span></h4>
+                    <a href="${project.github}"><img src="./../img/github-mark.png" alt="Github Link to project ${project.github}"></a>
+                </div>
                 <div>
                     <p><span class="span-bold">Brief: </span>${project.brief}</p>
                     <p><span class="span-bold">Technologies: </span>${project.technologies} </p>

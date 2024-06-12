@@ -44,10 +44,38 @@ body{
     scroll-behavior: smooth;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;
+    margin-top: 2em;
+}
+
+#recent-projects img {
+    width: 25px;
+    height: 25px;
+}
+
+.single-project h4, .single-project p {
+    margin: 0;
+}
+
+.project-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-project div p{
+    padding-bottom: 0.5em;
+}
+
+.single-project {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 0.5em;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 #carousel-container{
-    width: 100%;
+    width: 60%;
     padding-bottom: 2em;
 }
 
