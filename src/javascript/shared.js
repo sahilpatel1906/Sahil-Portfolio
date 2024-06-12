@@ -51,6 +51,7 @@ const AllProjects = [
     {
         "name": "Blog Front-end",
         "brief": "Created a frontend for a blog site API. Users would be able to log in to their account and view all blogs posted on the site. They would also be able to view, create, edit, and delete their own personal blogs. Users should also be able to filter the blogs to search for particular titles. Users can leave comments and likes on posts within blogs. Only the creater of a blog can add posts to a blog.",
+        "technologies": "HTML5, CSS, JavaScript, React, Postico, Postman, Trello",
         "github": "https://github.com/sahilpatel1906/Blog_Frontend",
         "link": ""
     },
