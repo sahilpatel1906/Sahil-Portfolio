@@ -6,15 +6,20 @@
 
 .container {
     max-width: 34em;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     position: relative;
 }
 
 .container div{
     border: 2px solid;
     border-radius: 1em;
-    padding: 1.5em;
+    padding: 0.5em;
+}
+
+.container div h4, .container div p{
+    margin: 0;
+    padding: 0.5em;
 }
 
 .container:nth-child(odd) {

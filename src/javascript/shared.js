@@ -138,7 +138,7 @@ function createTimeline(timelineItems, elemId) {
         $(elemId).append(`          
              <article class="container">
                 <div>
-                    <h4>${item.year}</h4>
+                    <h4><span class="span-bold"> ${item.year} </span></h4>
                     <p>${item.info}</p>
                 </div>
             </article>  
