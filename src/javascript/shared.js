@@ -8,20 +8,19 @@ const TopProjects = [
         "link": ""
     },
     {
+        "name": "Adminstration and Management App",
+        "brief": "Developed a comprehensive full stack application for effective team, project, and user management. The application offers role-based access, providing tailored views and functionalities for both administrators and workers. Administrators can oversee and update team structures, project details, and user information, while workers have streamlined access to their specific tasks and project details.",
+        "technologies": "Java, Spring, PostgreSQL, pgAdmin, Postman, Angular, JavaScript, HTML5, CSS, Git, Figma",
+        "github": "https://github.com/sahilpatel1906/AdminApp-Cooksys",
+        "link": "" 
+    },
+    {
         "name": "Jeanius Delivery App",
         "brief": "This project aims to improve delivery logistics by implementing an efficient route planning system for drivers. Currently, the delivery fleet is underutilised due to fixed routes and inefficient assignment practices that do not consider package quantities, leading to unreliable delivery times. By developing a dynamic route planning system, this project aims to optimise delivery routes, ensuring efficient vehicle utilisation and timely deliveries. The project's goal is to revolutionise delivery operations within RainforestRetail, maximising fleet efficiency and delivering a superior customer experience.",
         "technologies": "Java, Spring, React, PostgreSQL, Postman, Trello, MUI",
         "github": "https://github.com/sahilpatel1906/Capstone_Project",
         "link": ""
-    },
-    {
-        "name": "Conversa Api",
-        "brief": "This back-end project utilised Java, Spring Boot and a PostgreSQL database to build a chatroom application programming interface (API) that allows users to make requests to a back-end database. The motivation behind this project was to deepen our understanding of developing back-end APIs using the Spring Framework in conjunction with PostgreSQL databases.",
-        "technologies": "Java, Sprint Boot, PostgreSQL, Postico, Postman, Trello",
-        "github": "https://github.com/sahilpatel1906/Conversa_API",
-        "link": ""
-    },
-    
+    }, 
 ]
 
 
@@ -53,8 +52,30 @@ const AllProjects = [
         "brief": "Created a frontend for a blog site API. Users would be able to log in to their account and view all blogs posted on the site. They would also be able to view, create, edit, and delete their own personal blogs. Users should also be able to filter the blogs to search for particular titles. Users can leave comments and likes on posts within blogs. Only the creater of a blog can add posts to a blog.",
         "technologies": "HTML5, CSS, JavaScript, React, Postico, Postman, Trello",
         "github": "https://github.com/sahilpatel1906/Blog_Frontend",
-        "link": ""
+        "link": "" 
     },
+    {
+        "name": "Mock Twitter API",
+        "brief": "Developed a RESTful API simulating Twitter functionality, utilizing CRUD operations to interact with a PostgreSQL database server, enabling features such as posting tweets. ",
+        "technologies": "Java, Spring, PostgreSQL, Git, Postman, pgAdmin",
+        "github": "https://github.com/sahilpatel1906/Mock-Twitter-API",
+        "link": "" 
+    },
+    {
+        "name": "TrackGuesser",
+        "brief": "Developed a song guesser game application utilizing the Spotify API for fetching track-related data, and implemented three distinct game modes as part of a two-person team. ",
+        "technologies": "Angular, JavaScript, HTML5, Tailwind CSS, Git, Figma",
+        "github": "https://github.com/sahilpatel1906/TrackGuesser",
+        "link": "" 
+    },
+    {
+        "name": "Adminstration and Management App",
+        "brief": "Developed a comprehensive full stack application for effective team, project, and user management. The application offers role-based access, providing tailored views and functionalities for both administrators and workers. Administrators can oversee and update team structures, project details, and user information, while workers have streamlined access to their specific tasks and project details.",
+        "technologies": "Java, Spring, PostgreSQL, pgAdmin, Postman, Angular, JavaScript, HTML5, CSS, Git, Figma",
+        "github": "https://github.com/sahilpatel1906/AdminApp-Cooksys",
+        "link": "" 
+    },
+    
     
 ]
 
