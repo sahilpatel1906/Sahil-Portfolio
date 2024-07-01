@@ -13,4 +13,5 @@ function sendEmail(senderName, email, subject, message) {
 $("#contact-form").on("submit", function (event) {
     event.preventDefault();
     sendEmail(event.target[0].value, event.target[1].value, event.target[2].value, event.target[3].value);
+    event.target.reset();
 });
