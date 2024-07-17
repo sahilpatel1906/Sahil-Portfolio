@@ -30,7 +30,7 @@ createBoxesDiv(10);
 
 // Download pdf on button click on index
 $('#resume-download').click(function(){
-    window.open("./../misc/FastTrack Blank Blankski March 2024.pdf", '_blank');
+    window.open("./../misc/Sahil Patel CV.pdf", '_blank');
 });
 
 // Redirect to projects page to show all projects
