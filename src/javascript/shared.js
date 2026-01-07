@@ -107,7 +107,7 @@ const timeline = [
     },
     {
         "year": "Now",
-        "info": "Full stack development at CookSys"
+        "info": "Full Stack Developer at Cook Systems (Deployed at FedEx)"
     } 
 ]
 
